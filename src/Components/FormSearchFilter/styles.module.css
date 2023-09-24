@@ -1,0 +1,73 @@
+/*Pone hacia la derecha el form para buscar en la tienda*/
+.tienda__buscar--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: centrado;
+  }
+  .tienda__buscar--flex div {
+    position: relative;
+  }
+  .label_filter {
+    margin: 0 5px; 
+  }
+  .buscar__input {
+    margin: 0 5px;
+    padding-right: 20px;
+  }
+  .buscar__button {
+    position: absolute;
+  width: 1rem;
+  left: 5.5rem;
+  top: 0.15rem;
+  border-style: none;
+  background-image: url(../../../public/srch.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  color: transparent;
+  }
+  .buscar__button:hover {
+    background-image: url(../../../public/srchy.svg);
+    color: transparent;
+  }
+  /*formato de los botones*/
+.button--format {
+  margin: 0 5px;
+  border: 0;
+  padding: 1px 5px;
+  background-color: rgb(62, 64, 149);
+  color: rgb(247, 247, 247);
+}
+.button--format:hover {
+  color: rgb(255, 242, 18);
+}
+.button--format:active {
+  animation-name: achicar;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+}
+.text--format {
+  color: rgb(62, 64, 149);
+  font-weight: bolder;
+}
+@keyframes achicar {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}

@@ -1,0 +1,17 @@
+td {
+  border: 1px solid;
+  padding: 10px;
+}
+.fontWeigth {
+  font-weight: bold;
+}
+.delete-container {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+img {
+  padding: 0;
+}
